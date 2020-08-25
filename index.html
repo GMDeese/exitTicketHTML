@@ -1,100 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 1</title>
-  <link rel="stylesheet" href="./cs/main.css">
-</head>
-<body>
-  <h1>Review of HTML ALL at once</h1>
-
-  <h2>Block Element</h2>
-  <p>Are the elements/tags that take up the entire width of the screen.</p>
-
-<p>Some of those eleents are</p>
-<ul>
-  <li>h1-h6</li>
-  <li>lists ul, li, ol</li>
-  <li>divs</li>
-  <li>p</li>
-</ul>
-
-<h2>Heading tags</h2>
-
-<h1>h1</h1>
-<h2>he</h2>
-<h3>h3</h3>
-<h4>h4</h4>
-<h5>h5</h5>
-<h6>h6</h6>
-
-<h2>Inline Elements</h2>
-
-<p>are elements that only take up space to show the content itself</p>
-
-<p>Those types of inline elements are:</p>
-
-<ol>
-  <li>hyperlinks (a tags)</li>
-  <li>image tags</li>
-<li>input tags (form fields)</li>
-  <li>spans</li>
-</ol>
-
-<p>Example of inline elements</p>
-
-<img src="./img/pikachu.png" alt="Pikachu">
-<img src="./img/pikachu.png" alt="Pikachu">
-
-<h4>hyperlinks</h4>
-
-<a href="./secondpage.html">second page</a>
-
-<h2>Block Elements vs Inline Elements</h1=2>
-
-  <p>ex. we can put two image tags together horizontally</p>
-
-  <img src="./img/Like_Mike.jpeg" alt="">
-  <img src="./img/Like_Mike.jpeg" alt="">
-
-  <p>In contrast you cannot put two divs together</p>
-  <div style="background-color: red;">div 1</div>
-  <div style="background-color: blue;">div 2</div>
-
-  <h2>Script Tags</h2>
-
-  <p>This is how you connect your js to your html</p>
-
-  <script src="./index.js"></script>
-
-  <h2>horizontal rule</h2>
-
-  <p>see below</p>
-
-  <hr>
-
-  <h2>break line</h2>
-
-  <p>This just breaks <br> up your content <br>into new lines on the screen</p>
-
-  <h2>table</h2>
-
-  <table>
-    <thead>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <h1>Hello World</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero vitae quia ducimus sapiente voluptatum sed dolorem, dignissimos
+          ipsam veritatis saepe, praesentium asperiores omnis. Labore quos
+          eveniet dolorem consequatur sed.
+        </p>
+      </div>
+      <div class="box2">
+        <h1>Goodbye World</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero vitae quia ducimus sapiente voluptatum sed dolorem, dignissimos
+          ipsam veritatis saepe, praesentium asperiores omnis. Labore quos
+          eveniet dolorem consequatur sed.
+        </p>
+      </div>
+      <div class="categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
+          <li><a href="">Category 3</a></li>
+          <li><a href="">Category 4</a></li>
+        </ul>
+      </div>
+      <h1>This is my awesome form</h1>
+      <form class="my-form" action="process.php" method="POST">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="firstName" placeholder="Enter first name" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="lastName" />
+        </div>
+        <br />
+        <br />
+        <div class="form-group">
+          <label>Phone #</label>
+          <input type="number" name="phone" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="Email" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Gender</label>
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Age:</label>
+          <input type="number" name="Age" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Birthday:</label>
+          <input type="date" name="birthday" />
+        </div>
+        <br />
+        <input class="button" type="submit" name="Submit" value="Submit" />
+      </form>
+      <h1>This is my awesome table</h1>
+      <table class="mytable">
+        <caption>
+          Alien football stars
+        </caption>
         <tr>
-            <th>Name</th>
-            <th>Age</th>
+          <th scope="col">Firstname</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Petname</th>
+          <th scope="col">City</th>
         </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Garrett</td>
-            <td>37</td>
+        <tr class="grey">
+          <td>John</td>
+          <td>Doe</td>
+          <td>Fifi</td>
+          <td>Denver</td>
         </tr>
-    </tbody>
-</table>
-
-
-</body>
+        <tr class="white">
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>Fido</td>
+          <td>Santa Fe</td>
+        </tr>
+        <tr class="grey">
+          <td>Jennifer</td>
+          <td>Smith</td>
+          <td>Pikachu</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr class="white">
+          <td>Stephen</td>
+          <td>Hawking</td>
+          <td>Furby</td>
+          <td>New York</td>
+        </tr>
+      </table>
+    </div>
+    <!-- ./container -->
+  </body>
 </html>
