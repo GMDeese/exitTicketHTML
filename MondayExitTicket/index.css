@@ -1,0 +1,174 @@
+/* For zeroing everything out (reset)
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  /*same as above */
+  font: normal 16px Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: black;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.button {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button :hover {
+  background: red;
+  color: white;
+}
+
+.box1 {
+  background-color: #333;
+  color: #ffffff;
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+
+  /*Same as above*/
+  border: 5px red solid;
+  border-width: 3px;
+  border-bottom-width: 10;
+  border-top-style: dotted;
+
+  border: 5px red solid;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  /* Same as Above*/
+  padding: 20px;
+
+  margin-top: 20px;
+  margin: 20px 0;
+}
+
+.box1 h1 {
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+.categories ul {
+  padding: 10px;
+  list-style: square;
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form.form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input [type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.my-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+th[scope="col"] {
+  background-color: #696969;
+  color: #fff;
+}
+
+th[scope="row"] {
+  background-color: #d7d9f2;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
