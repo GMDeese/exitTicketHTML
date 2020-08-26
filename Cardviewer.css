@@ -29,5 +29,5 @@ body {
 }
 
 .card:hover ~ .card {
-    transform: translateX(calc(var(--distance) *-1);
+  transform: translateX(calc(var(--distance) * -1));
 }
