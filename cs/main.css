@@ -1,13 +1,52 @@
-body {
-  margin-bottom: 7000px;
-}
-table,
-td {
-  border: 1px solid #333;
+/*
+comments: CMD + / or CTRL + /
+
+How this works:
+
+CSS syntax
+
+selector (element/id/class) {
+  property: value;
 }
 
-thead,
-tfoot {
-  background-color: #333;
-  color: #fff;
+selectors can be 
+  - elements
+  - id
+  - class
+  - or a combination of all of the above
+
+  What is an id?
+  - an attribute that you add to an element that you should assign a unique name to the value of the id
+  */
+
+label {
+  color: red;
+}
+
+#changeTextToBlue {
+  color: blue;
+}
+
+.changeToGreen {
+  color: green;
+}
+
+body {
+  margin-bottom: 5000px;
+}
+
+div span {
+  color: peru;
+}
+
+div #editMe {
+  color: purple;
+}
+
+.someClass #someID {
+  color: darkkhaki;
+}
+
+#someID.someOtherClass {
+  color: darkred;
 }

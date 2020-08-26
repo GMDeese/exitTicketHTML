@@ -1,193 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Cheat Sheet</title>
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="box1">
-        <h1>Hello World</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          vero vitae quia ducimus sapiente voluptatum sed dolorem, dignissimos
-          ipsam veritatis saepe, praesentium asperiores omnis. Labore quos
-          eveniet dolorem consequatur sed.
-        </p>
-      </div>
-      <div class="box2">
-        <h1>Goodbye World</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          vero vitae quia ducimus sapiente voluptatum sed dolorem, dignissimos
-          ipsam veritatis saepe, praesentium asperiores omnis. Labore quos
-          eveniet dolorem consequatur sed.
-        </p>
-      </div>
-      <div class="categories">
-        <h2>Categories</h2>
-        <ul>
-          <li><a href="">Category 1</a></li>
-          <li><a href="">Category 2</a></li>
-          <li><a href="">Category 3</a></li>
-          <li><a href="">Category 4</a></li>
-        </ul>
-      </div>
-      <h1>This is my awesome form</h1>
-      <form class="my-form" action="process.php" method="POST">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" name="firstName" placeholder="Enter first name" />
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro CSS</title>
+  <link rel="stylesheet" href="./cs/main.css">
+</head>
+<body>
+  <h1>Intro CSS</h1>
 
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" name="lastName" />
-        </div>
+  <h3>Basics</h3>
 
-        <div class="form-group">
-          <label>Phone #</label>
-          <input type="number" name="phone" />
-        </div>
+  <h4>Inline Styles</h4>
 
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" name="Email" />
-        </div>
+  <i>You have in-line styles by adding a style attribute to each element to apply a styel to see it</i>
 
-        <div class="form-group">
-          <label>Message</label>
-          <textarea name="message" id="message" cols="30" rows="4"></textarea>
-        </div>
+  <br>
+  <br>
+  <br>
+  <p>Ex. I want the following text to be red: <span style="color: red;">See I am red with inline styles</span></p>
 
-        <div class="form-group">
-          <label>Gender</label>
-          <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+  <h4>External Style Sheet</h4>
 
-        <div class="form-group">
-          <label>Age:</label>
-          <input type="number" name="Age" />
-        </div>
+  <i>An external stylesheet is connected to the HTML with a link tag in the head element</i>
+ 
+  
+  <br>
+  <br>
+  <br>
+  <p>Ex. I want the following text to be red: <label>See I am red with inline styles</label></span></p>
 
-        <div class="form-group">
-          <label>Birthday:</label>
-          <input type="date" name="birthday" />
-        </div>
-        <input class="button" type="Button" name="Submit" value="Submit" />
-      </form>
 
-      <div class="block">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam
-          repellat aliquam optio labore, quis quam repudiandae quae veritatis
-          enim voluptas ad placeat nemo voluptatum sed, blanditiis dolores modi
-          saepe.
-        </p>
-      </div>
+  <h3>Core CSS Concepts</h3>
 
-      <div class="block">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam
-          repellat aliquam optio labore, quis quam repudiandae quae veritatis
-          enim voluptas ad placeat nemo voluptatum sed, blanditiis dolores modi
-          saepe.
-        </p>
-      </div>
+  <span>
+    <span>Selectors</span>
+    <h3>ID selector</h3>
 
-      <div class="block">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam
-          repellat aliquam optio labore, quis quam repudiandae quae veritatis
-          enim voluptas ad placeat nemo voluptatum sed, blanditiis dolores modi
-          saepe.
-        </p>
-      </div>
+    <p>Ex. Instead of using a label element tag, I am going to use and id <span id="changeTextToBlue">See I am Blue</span></p>
+  
+    <h3>Class Selector</h3>
 
-      <div class="clr"></div>
+    <p class="changeToGreen">I</p>
+    <p class="changeToGreen">Want</p>
+    <p class="changeToGreen">all</p>
+    <p class="changeToGreen">of these p tags to have the same style</p>
+  
+  <h3>Combining Selectors</h3>
 
-      <div id="main-block">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam
-          repellat aliquam optio labore, quis quam repudiandae quae veritatis
-          enim voluptas ad placeat nemo voluptatum sed, blanditiis dolores modi
-          saepe.
-        </p>
-      </div>
+  <h4>element + element</h4>
 
-      <div id="sidebar">
-        <h3>Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam
-          repellat aliquam optio labore, quis quam repudiandae quae veritatis
-          enim voluptas ad placeat nemo voluptatum sed, blanditiis dolores modi
-          saepe.
-        </p>
-      </div>
-      <div class="clr"></div>
+  <div>This is a div that contains a span that I want to edit
+    <span>I am the span</span>
+  
+  </div>
 
-      <div class="p-box">
-        <h1>Hello</h1>
-        <h2>Goodby</h2>
-      </div>
+  <h4>element + id</h4>
 
-      <h1>This is my awesome table</h1>
-      <table class="mytable">
-        <caption>
-          Owner/Pet Roster
-        </caption>
-        <tr>
-          <th scope="col">Firstname</th>
-          <th scope="col">Lastname</th>
-          <th scope="col">Petname</th>
-          <th scope="col">City</th>
-        </tr>
-        <tr class="grey">
-          <td>John</td>
-          <td>Doe</td>
-          <td>Fifi</td>
-          <td>Denver</td>
-        </tr>
-        <tr class="white">
-          <td>Jane</td>
-          <td>Doe</td>
-          <td>Fido</td>
-          <td>Santa Fe</td>
-        </tr>
-        <tr class="grey">
-          <td>Jennifer</td>
-          <td>Smith</td>
-          <td>Pikachu</td>
-          <td>Los Angeles</td>
-        </tr>
-        <tr class="white">
-          <td>Stephen</td>
-          <td>Hawking</td>
-          <td>Furby</td>
-          <td>New York</td>
-        </tr>
-      </table>
-    </div>
-    <ul class="my-list">
-      <li>List Item</li>
-      <li>List Item</li>
-      <li>List Item</li>
-      <li>List Item</li>
-      <li>List Item</li>
-      <li>List Item</li>
-      <li>List Item</li>
-    </ul>
-    <!-- ./container -->
-    <a class="fix-me button" href="">Hello</a>
-  </body>
+  <div>
+    this div has another div with a specific id I want to edit
+  <div id="editMe">i am div with id</div>
+  </div>
+  
+  <h4>class id</h4>
+
+  <div class="someClass">
+    someClass
+  <div id="someID">I am someID</div>
+
+  <div class="someClass">
+    someClass
+    <div id="someID" class="someOtherClass">I am someID with someOtherClass</div>
+  </div>
+  
+  
+  </span>
+</body>
 </html>
